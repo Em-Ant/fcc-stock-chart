@@ -1,8 +1,7 @@
 'use strict';
 
 var https = require('https');
- if(!process.env.PRODUCTION)
-  require('dotenv').load();
+if(!process.env.NODE_ENV === 'production') require('dotenv').load();
 
 var request = require('request');
 //var Users = require('../models/users.js');

@@ -1,6 +1,6 @@
 'use strict';
 
-var path = process.env.PRODUCTION ? process.env.APP_URL : process.cwd();
+var path = process.cwd();
 var fs = require('fs');
 
 var StockHandler = require('../controllers/quandlHandler.js');
