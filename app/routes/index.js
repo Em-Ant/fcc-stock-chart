@@ -32,7 +32,7 @@ var codes = ['FB', 'AAPL'];
           codes.push(c);
           res.json({newCode: c});
         } else {
-          res.json({error: 'code already added'});
+          res.json({error: 'already added'});
         }
       } else {
         res.json({error: 'unknown code'});

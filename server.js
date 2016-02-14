@@ -11,7 +11,10 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 
-if(!process.env.NODE_ENV === 'production') require('dotenv').load();
+if(!(process.env.NODE_ENV === 'production')) {
+  console.log('development');
+  require('dotenv').load();
+}
 
 app.use(favicon(process.cwd() + '/client/public/favicon.ico'));
 app.use('/', express.static(process.cwd() + '/client/public'));

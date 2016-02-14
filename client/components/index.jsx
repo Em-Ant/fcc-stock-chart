@@ -38,6 +38,7 @@ var Hello = React.createClass({
     var socket = this.socket = io.connect(appUrl);
     this.setState({loading: true});
     socket.on('add', function(code) {
+      self.setState({loading: true});
       _requestStock(code, function(data){
         if(data) {
           chart.load({
@@ -50,6 +51,7 @@ var Hello = React.createClass({
       });
     });
     socket.on('remove', function (code) {
+      self.setState({loading: true});
       chart.unload({
         ids: code
       })
@@ -81,7 +83,7 @@ var Hello = React.createClass({
             y: {
               label : {
                 text: 'Value',
-                position: 'outer-center'
+                position: 'outer-middle'
               }
             }
         },
