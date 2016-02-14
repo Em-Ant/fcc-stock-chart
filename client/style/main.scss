@@ -1,0 +1,103 @@
+
+@import 'reset.css';
+@import 'c3.min.css';
+@import url(https://fonts.googleapis.com/css?family=Oxygen+Mono);
+
+$test-color: red;
+
+$bg : #bbb;
+$light-bg : #f6f6f6;
+$text : #333;
+$close: #D91E18;
+
+$blu : #1F77B4;
+$orange : #FF7F0E;
+
+#chart {
+  background-color: $light-bg;
+}
+
+body {
+  font-family: 'Oxygen Mono', sans-serif;
+  color: $text;
+  background-color: $bg;
+
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    font-size: 1.3em;
+    color: $text;
+    padding: 10px 0;
+    margin: 20px 0 10px;
+    background-color: $light-bg;
+  }
+}
+
+.menu {
+  margin-top: 10px;
+  background-color: $light-bg;
+  text-align: left;
+  padding: 5px;
+  input {
+    width: 145px;
+    height: 25px;
+    margin : 10px 5px;
+    padding: 0 5px;
+  }
+  div {
+    text-align: center;
+    display: inline-block;
+    width: 160px;
+    margin: 5px;
+    position: relative;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+}
+
+
+.stocks {
+  border: 1px solid $text;
+  padding: 5px 0;
+  width : 95%;
+  margin: 5px auto;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: $close;
+    border-color: $close;
+  }
+}
+
+footer {
+  padding-top: 30px;
+  color: #666;
+  font-size: 1em;
+  text-align: center;
+  p {
+    margin: 5px;
+  }
+  a {
+    color: $blu;
+    transition: all 0.2s;
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
+  }
+}

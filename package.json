@@ -1,0 +1,49 @@
+{
+  "name": "clementinejs_react",
+  "version": "1.0.1",
+  "description": "A full-stack app boilerplate for the freeCodeCamp Course.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Em-Ant/to-be-added"
+  },
+  "homepage": "http://www.herokuapp-to-be-added.com/",
+  "bugs": "https://github.com/Em-Ant/to-be-added/issues",
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "full stack",
+    "Express",
+    "Node",
+    "javascript",
+    "React",
+    "webpack"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Emanuele Antonelli",
+  "license": "MIT",
+  "dependencies": {
+    "c3": "^0.4.10",
+    "d3": "^3.5.15",
+    "express": "^4.12.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "request": "^2.69.0",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {
+    "dotenv": "^1.2.0",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.12"
+  }
+}
