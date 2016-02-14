@@ -13,7 +13,7 @@ var io = require('socket.io')(server);
 
 if(!process.env.NODE_ENV === 'production') require('dotenv').load();
 
-app.use(favicon( process.cwd() + '/client/public/favicon.ico'));
+app.use(favicon(process.cwd() + '/client/public/favicon.ico'));
 app.use('/', express.static(process.cwd() + '/client/public'));
 
 io.on('connection', function(socket){

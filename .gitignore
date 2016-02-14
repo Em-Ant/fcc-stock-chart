@@ -2,11 +2,6 @@ node_modules/
 .eslintrc
 .env
 
-# webpack bundle
-client/public/
-
-client/public/bundle
-
 # local database
 mongod
 data/
