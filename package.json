@@ -20,7 +20,9 @@
     "webpack"
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack -p",
+    "postinstall": "npm run build"
   },
   "author": "Emanuele Antonelli",
   "license": "MIT",
